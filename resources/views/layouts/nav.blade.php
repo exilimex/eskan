@@ -45,7 +45,6 @@
                     </li>
                 </ul>
             </li>
-
     </ul>
 
     <!-- Rooms_Management -->
@@ -72,7 +71,6 @@
                     </li>
                 </ul>
             </li>
-
         @endguest
     </ul>
 </div>

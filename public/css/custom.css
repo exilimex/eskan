@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Regular.woff) format('woff'),
+    url(../fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/DroidKufi-Bold.woff) format('woff'),
+    url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+
+
+body {
+    font-family: 'Droid Arabic Kufi';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Droid Arabic Kufi';
+}
+.slides-des .buttons .btn{
+    width: 49%
+}
+
+.input-group .form-control:first-child, .input-group-addon:last-child{
+    border-radius: 0;
+}
+
+
+ .dropdown >ul > li > a {
+     border-bottom: 1px solid #eee;
+     clear: both;
+     color: #333333;
+     display: block;
+     font-weight: normal;
+     line-height: 1.42857;
+     padding: 10px 20px;
+     position: relative;
+     white-space: nowrap;
+     background-color: white;
+ }
+
+ .not-readed {
+     background-color: #dddddd;
+     font-weight: bold;
+ }
