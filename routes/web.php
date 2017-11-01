@@ -17,5 +17,29 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/rooms', 'RoomController@index')->name('rooms.index');
+//Route::get('/home', 'HomeController@index')->name('home');
+
+//Route::get('/rooms', 'RoomController@index')->name('rooms.index');
+//Route::get('/rooms', 'RoomController@create')->name('rooms.create');
+
+
+//'middleware' => ['auth']]
+Route::group(['prefix' => '/home'],  function(){
+
+    Route::get('/', 'HomeController@index')->name('home');
+
+    //Route For Rooms
+    Route::group(['prefix' => 'rooms'], function() {
+        Route::get('/show', 'RoomController@index')->name('rooms.index');
+        Route::get('/create', 'RoomController@index')->name('room.create');
+    });
+
+    //Route For Students
+    Route::group(['prefix' => 'student'], function() {
+        Route::get('/', 'StudentController@index')->name('student.index');
+        Route::get('/create', 'StudentController@index')->name('student.create');
+    });
+
+   // Route::get('/', 'RoomController@index')->name('home.index');
+
+});

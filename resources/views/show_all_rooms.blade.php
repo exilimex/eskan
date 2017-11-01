@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
+                    <div class="panel-heading">{!! trans('dictionary.show_all_rooms') !!}</div>
 
                     <div class="panel-body">
                         @if (session('status'))
@@ -13,8 +13,15 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
-                        You are logged in Rooms
+                            <div class="form-group">
+                                <div class="col-md-8 col-md-offset-4">
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <button type="submit" class="btn btn-primary">
+                                        {!! trans('dictionary.create_room') !!}
+                                    </button>
+                                </div>
+                            </div>
+                            {!! trans('dictionary.show_all_rooms') !!}
                     </div>
                 </div>
             </div>

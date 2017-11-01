@@ -547,9 +547,8 @@ return [
 
     'rooms_management'      => 'إدارة الغرف',
     'show_all_rooms'        => 'عرض جميع الغرف',
+    'create_room'           => 'إنشاء غرفة',
     'student_management'    => 'إدارة الطلاب',
     'show_all_student'      => 'عرض جميع الطلاب',
-
-
 
 ];

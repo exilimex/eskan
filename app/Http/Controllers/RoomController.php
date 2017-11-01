@@ -21,4 +21,10 @@ class RoomController extends Controller
     {
         return view('show_all_rooms');
     }
+
+
+    public function create()
+    {
+        return view('create_room');
+    }
 }
