@@ -544,11 +544,31 @@ return [
     'Administrative_Communication_System'   => 'نظام الإتصالات الإدارية',
 
 //eskan
+    'eskan_management'      => 'ادارة السكن',
 
+//Buildings
+    'building_number'       => 'رقم المبنى',
+    'buildings'             => 'المباني',
+    'create_building'       => 'إنشاء مبنى',
+    'edit_building'         => 'تعديل مبنى',
+
+
+//Suites
+    'suites'                => 'الأجنحة',
+    'suite_number'          => 'رقم الجناح',
+    'create_suites'         => 'إنشاء جناح',
+    'edit_suites'           => 'تعديل جناح',
+
+//Rooms
+    'rooms'                 => 'الغرف',
+    'create_room'           => 'إنشاء غرفة',
     'rooms_management'      => 'إدارة الغرف',
     'show_all_rooms'        => 'عرض جميع الغرف',
-    'create_room'           => 'إنشاء غرفة',
+
+
+//Students
     'student_management'    => 'إدارة الطلاب',
     'show_all_student'      => 'عرض جميع الطلاب',
+
 
 ];

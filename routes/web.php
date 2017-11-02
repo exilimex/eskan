@@ -28,15 +28,30 @@ Route::group(['prefix' => '/home'],  function(){
 
     Route::get('/', 'HomeController@index')->name('home');
 
+    //Route For building
+    Route::group(['prefix' => 'building'], function() {
+        Route::get('/show', 'BuildingController@index')->name('buildings.index');
+        Route::get('/create', 'BuildingController@create')->name('building.create');
+        Route::post('/', 'BuildingController@store')->name('building.store');
+    });
+
+    //Route For suites
+    Route::group(['prefix' => 'suite'], function() {
+        Route::get('/show', 'SuiteController@index')->name('suites.index');
+        Route::get('/create', 'SuiteController@create')->name('suite.create');
+        Route::post('/', 'SuiteController@store')->name('suite.store');
+    });
+
+
     //Route For Rooms
     Route::group(['prefix' => 'rooms'], function() {
         Route::get('/show', 'RoomController@index')->name('rooms.index');
-        Route::get('/create', 'RoomController@index')->name('room.create');
+        Route::get('/create', 'RoomController@create')->name('room.create');
     });
 
     //Route For Students
     Route::group(['prefix' => 'student'], function() {
-        Route::get('/', 'StudentController@index')->name('student.index');
+        Route::get('/', 'StudentController@index')->name('students.index');
         Route::get('/create', 'StudentController@index')->name('student.create');
     });
 

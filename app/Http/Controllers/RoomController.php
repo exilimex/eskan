@@ -19,12 +19,12 @@ class RoomController extends Controller
 */
     public function index()
     {
-        return view('show_all_rooms');
+        return view('rooms');
     }
 
 
     public function create()
     {
-        return view('create_room');
+        return view('create.room');
     }
 }

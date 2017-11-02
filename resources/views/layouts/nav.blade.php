@@ -51,26 +51,34 @@
     <ul class="nav navbar-nav navbar-right">
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-            {!! trans('dictionary.rooms_management') !!} <span class="caret"></span>
+            {!! trans('dictionary.eskan_management') !!} <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
             <li>
-                <a href="{{ route('logout') }}" >{!! trans('dictionary.show_all_rooms') !!}</a>
+                <a href="{{ route('buildings.index') }}" >{!! trans('dictionary.buildings') !!}</a>
             </li>
-        </ul>
+                <li>
+                    <a href="{{ route('suites.index') }}" >{!! trans('dictionary.suites') !!}</a>
+                        </li>
+                             <li>
+                                 <a href="{{ route('rooms.index') }}" >{!! trans('dictionary.rooms') !!}</a>
+                                     </li>
+                                         </ul>
     </li>
-        <!-- Students_Management -->
+    </ul>
+    <!-- Students_Management -->
         <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                    {!! trans('dictionary.student_management') !!} <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="{{ route('logout') }}" >{!! trans('dictionary.show_all_student') !!}</a>
-                    </li>
-                </ul>
-            </li>
-        @endguest
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                        {!! trans('dictionary.student_management') !!} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{ route('logout') }}" >{!! trans('dictionary.show_all_student') !!}</a>
+                        </li>
+                    </ul>
+                </li>
+                @endguest
+        </ul>
     </ul>
 </div>

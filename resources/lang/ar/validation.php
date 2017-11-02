@@ -215,6 +215,9 @@ return [
         'app_name'                  => 'اسم البرنامج',
         'request_reason'            => 'مبرر الطلب',
         'employee_id'               => 'الرقم الوظيفي',
+        'suite_number'              => 'رقم الجناح',
+        'building_number'           => 'رقم المبنى',
+
 
     ],
 
