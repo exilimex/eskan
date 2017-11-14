@@ -72,6 +72,8 @@ return [
     'conditions'                => 'الشروط',
     'registration'              => 'التسجيل',
     'how_to_use'                => 'الدليل الإرشادي',
+    'insurance'                 => 'التأمين',
+    'amount'                    => 'الرسوم',
 
     //user info
     'national_id'           => 'السجل المدني',
@@ -109,6 +111,8 @@ return [
     'gender'                => 'الجنس',
     'male'                  => 'ذكر',
     'female'                => 'انثى',
+    'friends_phone'         => 'هاتف قريب',
+
 
     //emergency person information
     'emergency_person'      => 'شخص للطوارئ',
@@ -130,6 +134,7 @@ return [
     'major_type'            => 'نوع المؤهل',
     'college'               => 'الكلية',
     'university'            => 'الجامعة',
+    'student_number'        => 'الرقم الجامعي',
 
     //Passwords
     'set_new_password'          => 'إعادة تعيين كلمة المرور',
@@ -154,7 +159,7 @@ return [
     'location'                  => 'اسم الجهة',
     'lab_admin'                 => 'مسؤول / مشرف المعمل',
     'lab_number'                => 'رقم المعمل #',
-    'room_number'               => 'رقم القاعة #',
+    'class_room_number'         => 'رقم القاعة #',
     'space'                     => 'المساحة (تقريبا)',
     'ground_type'               => 'نوع الأرضية',
     'network_tools'             => '&nbsp; توفر كبينة لمعدات الشبكة',
@@ -221,13 +226,13 @@ return [
     'Reset_The_Password'        => 'إعادة تعيين كلمة المرور',
     'change_password'           => 'تغيير كلمة المرور',
     'request_activation_code'   => 'طلب كود التفعيل',
-    'contenu'                   => 'استمرار',
+    'continue'                  => 'استمرار',
     'check_username'            => 'التحقق من إسم المستخدم',
     'user_no'                   => 'الرقم الوظيفي',
     'check'                     => 'تحقق',
     'username_is'               => 'اسم المستخدم هو: ',
     'you_can_reset_password_from'=> '،يمكنك اعادة تعين كلمة المرور من ',
-    'link_to_reset_pasword'     => 'هنا',
+    'link_to_reset_password'     => 'هنا',
 
     'welcom_to_check_username_services' => 'مرحباً بك عزيزي/ عزيزتي منسوب جامعة القصيم في الخدمات الذاتية للتحقق من اسم المستخدم.',
     'welcom_to_password_services'   => 'مرحباً بك عزيزي/ عزيزتي منسوب جامعة القصيم في الخدمات الذاتية لاسترجاع كلمة المرور.',
@@ -544,10 +549,12 @@ return [
     'Administrative_Communication_System'   => 'نظام الإتصالات الإدارية',
 
 //eskan
-    'eskan_management'      => 'ادارة السكن',
+    'eskan_management'      => 'إدارة السكن',
 
 //Buildings
     'building_number'       => 'رقم المبنى',
+    'number_of_building'    => 'المبنى رقم',
+    'building'              => 'المبنى',
     'buildings'             => 'المباني',
     'create_building'       => 'إنشاء مبنى',
     'edit_building'         => 'تعديل مبنى',
@@ -555,20 +562,33 @@ return [
 
 //Suites
     'suites'                => 'الأجنحة',
+    'suite'                 => 'الجناح',
     'suite_number'          => 'رقم الجناح',
     'create_suites'         => 'إنشاء جناح',
     'edit_suites'           => 'تعديل جناح',
+    'number_of_suites'      => 'عدد الأجنحة',
+    'rooms_in_the_suite'    => 'الغرف في هذا الجناح',
 
 //Rooms
     'rooms'                 => 'الغرف',
+    'room'                  => 'الغرفة',
     'create_room'           => 'إنشاء غرفة',
     'rooms_management'      => 'إدارة الغرف',
     'show_all_rooms'        => 'عرض جميع الغرف',
+    'number_of_rooms'       => 'عدد الغرف',
+    'room_number'           => 'رقم الغرفة',
+    'number_of_guests'      => 'عدد النزلاء',
+    'booking'               => 'تسكين',
 
 
 //Students
     'student_management'    => 'إدارة الطلاب',
     'show_all_student'      => 'عرض جميع الطلاب',
+    'students'              => 'جميع الطلاب',
+    'create_student'        => 'إنشاء طالب',
+    'student_status'        => 'الحالة الأكاديمية',
+
+
 
 
 ];

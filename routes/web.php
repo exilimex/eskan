@@ -46,13 +46,16 @@ Route::group(['prefix' => '/home'],  function(){
     //Route For Rooms
     Route::group(['prefix' => 'rooms'], function() {
         Route::get('/show', 'RoomController@index')->name('rooms.index');
-        Route::get('/create', 'RoomController@create')->name('room.create');
+        Route::get('/show/{building}/{suite}', 'RoomController@show')->name('room.show');
+        Route::get('/create/{building}/{suite}', 'RoomController@create')->name('room.create');
+        Route::post('/', 'RoomController@store')->name('room.store');
     });
 
     //Route For Students
     Route::group(['prefix' => 'student'], function() {
-        Route::get('/', 'StudentController@index')->name('students.index');
-        Route::get('/create', 'StudentController@index')->name('student.create');
+        Route::get('/show', 'StudentController@index')->name('students.index');
+        Route::get('/create', 'StudentController@create')->name('student.create');
+        Route::post('/', 'StudentController@store')->name('student.store');
     });
 
    // Route::get('/', 'RoomController@index')->name('home.index');
