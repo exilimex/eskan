@@ -6,7 +6,6 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">{!! trans('dictionary.buildings') !!}</div>
-
                     <div class="panel-body">
                         @if (session('status'))
                             <div class="alert alert-success">
@@ -14,23 +13,12 @@
                             </div>
                         @endif
                         <div class="panel-body">
-                            <form class="form-horizontal" method="POST" action="{{ route('building.store') }}">
+                            <form method="POST" action="{{ route('building.store') }}">
                                 {{ csrf_field() }}
-
-                                <div class="form-group{{ $errors->has('numeric') ? ' has-error' : '' }}">
-                                    <label for="email"
-                                           class="col-md-4 control-label">{!! trans('dictionary.building_number') !!}</label>
-
-                                    <div class="col-md-6">
-                                        <input id="email" type="text" class="form-control" name="building_number"
-                                               value="{{ old('building_id') }}">
-
-                                        @if ($errors->has('numeric'))
-                                            <span class="help-block">
-                                        <strong>{{ $errors->first('numeric') }}</strong>
-                                    </span>
-                                        @endif
-                                    </div>
+                                @include('layouts.error')
+                                <div class="form-group">
+                                    <label for="email" class="control-label">{!! trans('dictionary.building_number') !!}</label>
+                                        <input id="building_number" type="number" class="form-control" name="building_number" value="{{ old('building_id') }}">
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-4">
@@ -39,9 +27,6 @@
                                         </button>
                                     </div>
                                 </div>
-
-                                @include('layouts.error')
-
                             </form>
                         </div>
                     </div>

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\building;
+use App\Building;
+
 
 
 class BuildingController extends Controller
@@ -11,7 +12,11 @@ class BuildingController extends Controller
     public function index()
     {
 
-        $building = DB::table()->get();
+        $building = Building::all();
+      //  $suite = Suite::all();
+     //   $room = Room::all();
+      //  dd( $building->first()->suites()->count() );
+      // dd( $building->first()->suites->rooms() );
         return view('buildings', compact('building'));
 
     }

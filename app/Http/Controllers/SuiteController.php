@@ -4,18 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\suite;
+use App\building;
 
 class SuiteController extends Controller
 {
     public function index()
     {
-        return view('suites');
+       $suites = suite::all();
+       // dd(  $suites->first()->rooms()->count());
+        return view('suites', compact('suites'));
     }
 
 
     public function create()
     {
-        return view('create.suite');
+        $building_number = building::all();
+
+        return view('create.suite', compact('building_number'));
     }
 
 

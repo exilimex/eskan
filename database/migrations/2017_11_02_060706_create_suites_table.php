@@ -16,6 +16,8 @@ class CreateSuitesTable extends Migration
         Schema::create('suites', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('suite_number');
+            $table->integer('building_id')->unsigned();
+            $table->foreign('building_id')->references('id')->on('buildings')->onDelete('cascade');;
             $table->timestamps();
         });
     }

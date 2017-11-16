@@ -58,6 +58,18 @@ Route::group(['prefix' => '/home'],  function(){
         Route::post('/', 'StudentController@store')->name('student.store');
     });
 
+    //Route For Students
+    Route::group(['prefix' => 'booking'], function() {
+        Route::get('/show', 'bookingController@index')->name('booking.index');
+        Route::get('/create', 'bookingController@create')->name('booking.create');
+        Route::post('/', 'bookingController@store')->name('booking.store');
+        Route::get('/selection', 'AjaxController@selection');
+        Route::post('select-ajax', ['as'=>'select-ajax','uses'=>'bookingController@selectAjax']);
+        Route::post('select-room', ['as'=>'select-room','uses'=>'bookingController@selectRoom']);
+        Route::post('select-ajax', ['as'=>'select-ajax','uses'=>'AjaxController@selectAjax']);
+
+    });
+
    // Route::get('/', 'RoomController@index')->name('home.index');
 
 });
