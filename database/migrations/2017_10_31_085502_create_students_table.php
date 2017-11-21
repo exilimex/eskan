@@ -22,7 +22,7 @@ class CreateStudentsTable extends Migration
             $table->string('student_status');
             $table->integer('mobile');
             $table->integer('friends_phone');
-
+            $table->integer('reservation');
             $table->timestamps();
 
         });

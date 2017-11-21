@@ -19,23 +19,49 @@
                             @include('layouts.error')
 
 
-                            {!! Form::open() !!}
+                            {!! Form::open(['url'=>route('booking.store'),'method'=>'post']) !!}
 
                             <div class="form-group">
+                                <label>{!! trans('dictionary.student_name') !!}</label>
+                                {!! Form::select('student_id',[''=>'--- إختر ---']+$students,null,['class'=>'form-control']) !!}
+                            </div>
+
+
+                            <div class="row">
+
+                            <div class="form-group col-md-4">
                                 <label>{!! trans('dictionary.building_number') !!}</label>
                                 {!! Form::select('building_id',[''=>'--- إختر ---']+$buildings,null,['class'=>'form-control building']) !!}
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group col-md-4">
                                 <label>{!! trans('dictionary.suite_number') !!}</label>
                                 {!! Form::select('suite_id',[''=>'--- إختر ---'],null,['class'=>'form-control suite']) !!}
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group col-md-4">
                                 <label>{!! trans('dictionary.room_number') !!}</label>
                                 {!! Form::select('room_id',[''=>'--- إختر ---'],null,['class'=>'form-control']) !!}
                             </div>
 
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                     <label>{!! trans('dictionary.amount') !!}</label>
+                                    {!! Form::select('amount',
+                                    [
+                                    '1'=>'لم يسدد',
+                                    '2'=>'تم السداد',
+                                    '3'=>'معفى من السداد'
+                                    ]
+                                    ,null,['class'=>'form-control']) !!}
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>{!! trans('dictionary.insurance') !!}</label>
+                                    {!! Form::number('insurance', 'value',['class'=>'form-control']) !!}
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">{!! trans('dictionary.save') !!}</button>
                             </div>

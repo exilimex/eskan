@@ -92,6 +92,7 @@ return [
     'second_name'           => 'اسم الأب',
     'third_name'            => 'اسم الجد',
     'last_name'             => 'اسم العائلة',
+    'student_name'          => 'اسم الطالب',
 
     //en name
     'first_name_en'         => 'الاسم الانجليزي',
@@ -587,6 +588,7 @@ return [
     'students'              => 'جميع الطلاب',
     'create_student'        => 'إنشاء طالب',
     'student_status'        => 'الحالة الأكاديمية',
+
 
 
 

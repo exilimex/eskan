@@ -8,13 +8,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'sadsdasddsasdsasad') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-rtl.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-rtl.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

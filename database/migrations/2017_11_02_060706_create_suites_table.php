@@ -17,7 +17,7 @@ class CreateSuitesTable extends Migration
             $table->increments('id');
             $table->integer('suite_number');
             $table->integer('building_id')->unsigned();
-            $table->foreign('building_id')->references('id')->on('buildings')->onDelete('cascade');;
+            $table->foreign('building_id')->references('id')->on('buildings')->onDelete('cascade');
             $table->timestamps();
         });
     }

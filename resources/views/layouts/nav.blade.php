@@ -22,7 +22,7 @@
 
     <!-- Right Side Of Navbar -->
 
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-left">
         <!-- Authentication Links -->
         @guest
         <li><a href="{{ route('login') }}"> {!! trans('dictionary.login') !!}</a></li>
@@ -66,11 +66,7 @@
                                          </ul>
                                              </li>
                                                 </ul>
-    <!-- Booking_Management -->
-    <ul class="nav navbar-nav navbar-right">
-        <li class="">
-            <a href="{{ route('booking.index') }}" class="" data-toggle="" role="button" aria-expanded="false" aria-haspopup="true">{!! trans('dictionary.booking') !!}</a>
-                 </li>
+
 
     <!-- Students_Management -->
             <ul class="nav navbar-nav navbar-right">
@@ -84,6 +80,11 @@
                              </li>
                                  </ul>
                                      </li>
+    <!-- Booking_Management -->
+    <ul class="nav navbar-nav navbar-right">
+        <li class="">
+            <a href="{{ route('booking.index') }}" class="" data-toggle="" role="button" aria-expanded="false" aria-haspopup="true">{!! trans('dictionary.booking') !!}</a>
+        </li>
                   @endguest
             </ul>
     </ul>

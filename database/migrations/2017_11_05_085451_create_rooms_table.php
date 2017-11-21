@@ -18,7 +18,7 @@ class CreateRoomsTable extends Migration
             $table->integer('room_number');
             $table->integer('number_of_guests');
             $table->integer('suite_id')->unsigned();
-            $table->foreign('suite_id')->references('id')->on('suites')->onDelete('cascade');;
+            $table->foreign('suite_id')->references('id')->on('suites')->onDelete('cascade');
             $table->timestamps();
         });
     }
